@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="main1.js"></script>
 </head>
 <body>
     <div class="cacl-section">
@@ -25,7 +26,9 @@
             <div class="cacl__header-unit">
                 S-V.P.A.M
             </div>
-            <div class="cacl__screen"></div>
+            <div class="cacl__screen">
+                <input type="text" id="resultInput">
+            </div>
             <div class="cacl__body">
                 <div class="cacl__funtcion-section">
                     <div class="cacl__function-list">
@@ -51,7 +54,7 @@
                             <div class="cacl__funtion-button"></div>
                         </div>
                         <div style="flex: 1;" class="cacl__funtion-items">
-                            <div class="cacl__funtion-name">ALPHA</div>
+                            <div class="cacl__funtion-name">ON</div>
                             <div class="cacl__funtion-button"></div>
                         </div>
                     </div>
@@ -162,86 +165,86 @@
                     <div class="cacl__number-list">
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">7</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">7</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">8</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">8</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">9</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">9</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name">INS</div>
-                            <div class="cacl__number-button bg-CA5768">DEL</div>
+                            <button class="cacl__number-button bg-CA5768">DEL</button>
                         </div>
                         <div class="cacl__number-items ">
                             <div class="cacl__number-name">OFF</div>
-                            <div class="cacl__number-button bg-CA5768">AC</div>
+                            <button class="cacl__number-button bg-CA5768" onclick="buttonHandler(this)">AC</button>
                         </div>
                         <!--  -->
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">4</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">4</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">5</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">5</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">6</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">6</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">x</div>
+    <!-- x -->              <button class="cacl__number-button" onclick="buttonHandler(this)">x</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">÷</div>
+    <!-- ÷ -->              <button class="cacl__number-button" onclick="buttonHandler(this)">÷</button>
                         </div> 
                         <!--  -->
                         <div class="cacl__number-items">
                             <div class="cacl__number-name">S-SUM</div>
-                            <div class="cacl__number-button">1</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">1</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name">S-WAR</div>
-                            <div class="cacl__number-button">2</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">2</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">3</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">3</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">+</div>
+    <!-- + -->              <button class="cacl__number-button" onclick="buttonHandler(this)">+</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">-</div>
+    <!-- - -->              <button class="cacl__number-button" onclick="buttonHandler(this)">-</button>
                         </div>
                         <!--  -->
                         <div class="cacl__number-items">
                             <div class="cacl__number-name">Rnd</div>
-                            <div class="cacl__number-button">0</div>
+                            <button class="cacl__number-button">0</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name">Ran#</div>
-                            <div class="cacl__number-button">.</div>
+                            <button class="cacl__number-button">.</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name">π</div>
-                            <div class="cacl__number-button">EXP</div>
+                            <button class="cacl__number-button">EXP</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name">DRG</div>
-                            <div class="cacl__number-button">ANS</div>
+                            <button class="cacl__number-button">ANS</button>
                         </div>
                         <div class="cacl__number-items">
                             <div class="cacl__number-name"></div>
-                            <div class="cacl__number-button">=</div>
+                            <button class="cacl__number-button" onclick="buttonHandler(this)">=</button>
                         </div>
                     </div>
                 </div>
